@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Money | Gazim</title>
+  <link rel="stylesheet" href="donate.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>Donate Money 💚</h1>
+  <p class="subtitle">
+    100% secure. Powered by trusted payment providers.
+  </p>
+
+  {% if not current_user.is_authenticated %}
+    <div class="warning">
+      Please <a href="{{ url_for('login') }}">login</a> to donate.
+    </div>
+  {% else %}
+
+  <form method="POST" action="{{ url_for('create_checkout_session') }}">
+    {{ csrf_token() }}
+
+    <label>Choose Cause</label>
+    <select name="cause" required>
+      <option value="gaza">Gaza</option>
+      <option value="sudan">Sudan</option>
+      <option value="chad">Chad</option>
+    </select>
+
+    <label>Donation Amount (USD)</label>
+    <input type="number" name="amount" min="1" required>
+
+    <button type="submit">Donate Securely</button>
+  </form>
+
+  {% endif %}
+
+  <footer>
+    <p>🔒 Payments handled securely. We never see your card details.</p>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+  </footer>
+
+</div>
+
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Page </title>
+    <link rel="stylesheet" href="donate.css">
+</head>
+<body>
+    <h2>Donate to Gazim</h2>
+
+    <p>Sorry!<br> The service is not available right now.</p> -->
+
+    <!-- <div class="wrapper">
+        <div class="payment_form_wrapper">
+            <div class="payment_form">
+                <div class="back_card">
+                    <div class="stripe"></div>
+                    <div class="input_field">
+                        <label>CVC/CVV</label>
+                        <input type="text" name="cvc-cvv" class="input"
+                        placeholder="XXX" maxlength="3">
+                    </div>
+                </div>
+                <div class="front_card"></div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <footer>
+        <hr><hr>
+        <p>&copy; 2024 Gazims. All rights reserved.</p><hr><hr><br>
+        <nav class="buttons">
+            <a href="play.html" class="btn">Play</a>
+            <a href="read.html" class="btn">Read</a>
+            <a href="watch.html" class="btn">Watch</a>
+        </nav>
+        <hr>
+        <hr>
+        <nav id="footer">
+            <a href="about.html">About</a>
+            <a href="story.html">Our Story</a>
+            <a href="careers.html">Careers</a>
+            <a href="policy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="mailto:tariqalmira70@gmail.com">Contact</a>
+      </nav>
+      <hr>
+      <hr>
+    </footer> -->
+    
+</body>
+</html>
