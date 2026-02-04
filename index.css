@@ -1,0 +1,144 @@
+/* ===== GENERAL ===== */
+body {
+  background-color: hsl(117, 35%, 88%);
+  font-family: 'Segoe UI', sans-serif;
+  color: hsl(109, 83%, 14%);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: hsl(62, 81%, 22%);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#preview {
+  font-size: 18px;
+  width: 90%;
+  margin: auto;
+}
+
+#time {
+  color: hsl(200, 83%, 25%);
+  font-weight: bold;
+}
+
+/* ===== NAV BUTTONS ===== */
+.reg, .log, #re, #lo {
+  background-color: hsl(53, 76%, 84%);
+  color: hsl(0, 87%, 21%);
+  border: 3px solid hsl(0, 93%, 6%);
+  margin: 6px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.reg:hover, .log:hover, #re:hover, #lo:hover {
+  background-color: hsl(284, 82%, 48%);
+  color: white;
+}
+
+/* ===== IMAGES ===== */
+#region-img, #img1, .region-img {
+  display: block;
+  margin: 20px auto;
+  background-color: hsl(0, 35%, 84%);
+  border: 4px solid hsl(240, 100%, 10%);
+  border-radius: 12px;
+  box-shadow: 5px 5px 15px hsl(240, 100%, 15%);
+  width: 60%;
+  height: auto;
+  border-radius: 150px 150px 150px 150px;
+}
+
+/* ===== SECTIONS ===== */
+section {
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  color: hsl(109, 93%, 17%);
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+.btn {
+  background-color: hsl(116, 68%, 68%);
+  color: hsl(200, 83%, 25%);
+  border: 3px solid hsl(240, 100%, 10%);
+  border-radius: 8px;
+  margin: 4px;
+  padding: 6px 12px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  color: hsl(37, 93%, 29%);
+  background-color: hsl(84, 68%, 78%);
+}
+
+/* ===== FOOTER ===== */
+#footer {
+  background-color: hsl(135, 38%, 73%);
+  padding: 20px;
+  text-align: center;
+  border-top: 3px solid hsl(240, 100%, 10%);
+}
+
+#footer nav a {
+  display: inline-block;
+  margin: 5px;
+  color: hsl(281, 83%, 25%);
+  border: 2px solid hsl(270, 100%, 10%);
+  border-radius: 8px;
+  padding: 5px 10px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+#footer nav a:hover {
+  background-color: hsl(109, 51%, 77%);
+  color: hsl(80, 88%, 26%);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  #img1, .region-img {
+    width: 90%;
+  }
+  .btn {
+    display: block;
+    margin: 8px auto;
+    width: 80%;
+  }
+  .reg, .log {
+    position: static;
+    display: inline-block;
+    margin: 10px;
+  }
+}
+
+#regis, #logi {
+  margin-top: 20px;
+  text-align: center;
+  top: 20px;
+  right: 20px;
+}
+
+#hr {
+  margin-top: 30px;
+}
