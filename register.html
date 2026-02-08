@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Register</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- REGISTERATION FORM -->
+    <div>
+      <form action="" class="form">
+        <h1>Registration</h1>
+
+        <div>
+          <input type="text" placeholder="Username" required id="username">
+          <i class="bx bxs-user" id="user"></i><br>
+        </div>
+
+        <div>
+          <input type="email" placeholder="Email" required id="email">
+          <i class="bx bxs-envelope" id="envelope"></i>
+        </div>
+
+        <div>
+          <input type="password" placeholder="Password" required id="password">
+          <i class="bx bxs-lock-alt" id="lock"></i>
+        </div>
+
+        <div>
+          <input type="checkbox" required id="checkbox">
+          I agree to the <a href="terms.html" id="terms">Terms & Conditions</a> and I have read <a href="policy.html" id="policy">Privacy Policy</a>
+        </div><br>
+
+        <button type="submit" id="btn1">Register</button>
+        <div id="icons"> 
+          <a href="#"><i class="bx bxl-google" id="google"></i></a>
+          <a href="#"><i class="bx bxl-facebook" id="facebook"></i></a><br>
+        </div>
+          
+          <p>Or Register with other social platforms?</p>
+          <p>Already have an account? <br><br> <a href="login.html" id="login" onclick="showLogin()">Login</a></p>
+          
+      </form>
+    </div>
+    </div>
+  </div>
+
+</body>
+</html>

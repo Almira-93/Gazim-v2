@@ -1,0 +1,135 @@
+/* ===== GENERAL ===== */
+body {
+  border: 4px ridge hsl(120, 37%, 41%);
+  font-family: Arial, sans-serif;
+  margin: 15px;
+  padding: 10px;
+  background-color: hsl(117, 35%, 88%);
+  color: hsl(200, 15%, 20%);
+  text-align: center;
+}
+
+/* ===== HEADINGS ===== */
+h2 {
+  color: hsl(62, 81%, 22%);
+  border: 6px double hsl(120, 40%, 70%);
+  margin: 10px 0;
+  padding: 8px;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px hsl(120, 60%, 40%);
+  border-radius: 20px;
+}
+
+/* ===== CATEGORY LINKS ===== */
+#one, #two, #three, #four, #five {
+  display: block;
+  border: 2px ridge hsl(240, 100%, 10%);
+  border-radius: 12px;
+  box-shadow: 5px 5px 15px hsl(240, 100%, 15%);
+  width: 80%;
+  margin: 10px auto;
+  text-decoration: none;
+  color: hsl(200, 20%, 20%);
+  font-size: 16px;
+  padding: 10px;
+  background-color: hsl(120, 40%, 90%);
+  transition: 0.3s ease;
+}
+
+#one:hover, #two:hover, #three:hover, #four:hover, #five:hover {
+  background-color: hsl(109, 51%, 77%);
+  color: hsl(80, 88%, 26%);
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  background-color: hsl(116, 68%, 68%);
+  color: hsl(200, 83%, 25%);
+  border: 3px solid hsl(240, 100%, 10%);
+  border-radius: 10000px;
+  margin: 4px;
+  padding: 6px 12px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  color: hsl(37, 93%, 29%);
+  background-color: hsl(84, 68%, 78%);
+}
+
+/* ===== LOGIN & REGISTER ===== */
+.reg, .log {
+  background-color: hsl(53, 76%, 84%);
+  color: hsl(0, 87%, 21%);
+  border: 3px solid hsl(0, 93%, 6%);
+  margin: 6px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.reg:hover, .log:hover {
+  background-color: hsl(284, 82%, 48%);
+  color: white;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: hsl(135, 38%, 73%);
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: hsl(109, 83%, 14%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-top: 4px solid hsl(120, 40%, 30%);
+}
+
+#footer {
+  background-color: hsl(135, 38%, 73%);
+  padding: 20px;
+  text-align: center;
+  border-top: 3px solid hsl(240, 100%, 10%);
+}
+
+#footer a {
+  display: inline-block;
+  margin: 5px;
+  color: hsl(281, 83%, 25%);
+  border: 2px solid hsl(270, 100%, 10%);
+  border-radius: 8px;
+  padding: 5px 10px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+#footer a:hover {
+  background-color: hsl(109, 51%, 77%);
+  color: hsl(80, 88%, 26%);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1.3rem;
+    padding: 6px;
+  }
+
+  .btn {
+    display: block;
+    margin: 8px auto;
+    width: 80%;
+  }
+
+  .reg, .log {
+    display: inline-block;
+    margin: 10px;
+  }
+
+  #one, #two, #three, #four, #five {
+    width: 90%;
+    font-size: 15px;
+    padding: 8px;
+  }
+}

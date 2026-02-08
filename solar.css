@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+  background: radial-gradient(circle at center, #0a0a12 30%, #000010 100%);
+  color: #00ffcc;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+header {
+  padding: 40px 0 20px 0;
+  background: rgba(0, 0, 0, 0.6);
+  border-bottom: 2px solid #00ffcc;
+  box-shadow: 0 0 20px #00ffff44;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #00ffff;
+  text-shadow: 0 0 20px #00ffff, 0 0 40px #ff0088;
+  animation: flicker 2s infinite alternate;
+}
+
+@keyframes flicker {
+  0% { opacity: 1; text-shadow: 0 0 15px #00ffff; }
+  100% { opacity: 0.9; text-shadow: 0 0 30px #ff00aa; }
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #ffffffaa;
+  margin-top: 5px;
+}
+
+.container {
+  margin: 40px auto;
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.planet-screen {
+  background: rgba(0, 10, 20, 0.6);
+  border: 2px solid #00ffff;
+  border-radius: 20px;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 0 30px #00ffff66;
+  margin-bottom: 30px;
+  transition: 0.3s ease;
+}
+
+.planet {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle at 30% 30%, #4effff, #001a1a 80%);
+  border-radius: 50%;
+  margin: 20px auto;
+  box-shadow: 0 0 60px #00ffff88, inset 0 0 30px #004444;
+  animation: rotatePlanet 10s linear infinite;
+}
+
+@keyframes rotatePlanet {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.btn {
+  background-color: transparent;
+  border: 2px solid #00ffff;
+  color: #00ffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px #00ffff33;
+}
+
+.btn:hover {
+  color: #000;
+  background-color: #00ffff;
+  box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff88;
+}
+
+.btn.laser:hover {
+  background-color: #ff0044;
+  box-shadow: 0 0 25px #ff0044;
+}
+
+.btn.missile:hover {
+  background-color: #ffaa00;
+  box-shadow: 0 0 25px #ffaa00;
+}
+
+.stats {
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #00ffff;
+  padding: 20px;
+  width: 60%;
+  border-radius: 15px;
+  color: #fff;
+  box-shadow: 0 0 25px #00ffff55;
+}
+
+.stats h2 {
+  color: #00ffff;
+  text-shadow: 0 0 15px #00ffff;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #00ffffaa;
+  text-shadow: 0 0 10px #00ffff;
+}
+footer a {
+  color: #00ffff;
+  text-decoration: none;
+  border-bottom: 1px dashed #00ffff;
+}
